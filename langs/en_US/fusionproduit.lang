@@ -1,0 +1,75 @@
+# Copyright (C) 2021 SuperAdmin <vmaury@timgroup.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#
+# Générique
+#
+
+# Module label 'ModuleFusionProduitName'
+ModuleFusionProduitName = Mergin' products
+# Module description 'ModuleFusionProduitDesc'
+ModuleFusionProduitDesc = Allows to merge 2 products/services
+
+#
+# Page d'administration
+#
+FusionProduitSetup = FusionProduit module setup
+Settings = Settings
+FusionProduitSetupPage = FusionProduit module setup 
+FUSIONPRODUIT_PRODUCTTABLELIST = Table list where to replace product/service
+FUSIONPRODUIT_PRODUCTTABLELISTTooltip = List tables, separated by CR (carriage return). <br/>By default, it replaces the field fk_product = product id to delete by the product id to keep; if the field name to process is NOT fk_product, indicate it after table name with a , separator<br/>If table name is preceed by +=0| , the processed field will by added in to keep record to these in to del record, and it will be reset in the to keep record.
+FUSIONPRODUIT_CUSTOMCODE = Specific php code to execute
+FUSIONPRODUIT_CUSTOMCODETooltip = Var names for product to keep / del are $pidtokeep / $pidtodel
+
+#
+# Page À propos
+#
+About = About
+FusionProduitAbout = About FusionProduit
+FusionProduitAboutPage = About FusionProduit page
+
+#
+# Page index
+#
+FusionProduitArea = Products/services merge
+MergeExplaination = Products to merge must <ul><li> have similar features</li><li> be in sell and/or in buy </li></ul>Legend :
+PropertiesOK = Identical features
+PropertiesKO = Features differ, impossible to merge
+PropertiesBof = Features differ, merging possible
+SelProdToKeep = Select product/service to keep
+SelProdToDel = Select product/service to disable/delete
+ButMerge = Merge products
+stepXonY = Step %s on 4
+selProdsToMerge = Products/services to merge selection
+checkProdsToMerge = Products/services to merge verification
+ProdToKeep = Product to keep
+ProdToDel = Product to disable/delete
+MergingProds = <h4>Products merging ! <br/> Sql queries execution </h4>
+LineTreatmment = Processing line "%s"
+TableNotFoundInDb = Unknown table ### in database
+FieldsNotFoundInTable = Unknown fields (###) in table
+CheckToApplyMerges = Check to really apply changes (test only if unchecked)
+TestModeChangesNotCommited = Test mode, changes not committed
+ChangesCommited = Merge has been processed
+ProductsMustBeDifferent = Products/services to merge must be different :-\
+CustomCodeExec = Specific php code execution
+NoCustomCode =No specific code to execute
+ProductMergeWithNote = Product merges with %s on %s by %s, then disabled (no more on buy nor on sale)
+ProductDisactCode = --Desact--
+#
+# Box d'exemple
+#
+MyWidget = My widget
+MyWidgetDescription = Description of my widget

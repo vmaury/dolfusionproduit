@@ -1,0 +1,75 @@
+# Copyright (C) 2021 SuperAdmin <vmaury@timgroup.fr>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#
+# Générique
+#
+
+# Module label 'ModuleFusionProduitName'
+ModuleFusionProduitName = Fusion Produit
+# Module description 'ModuleFusionProduitDesc'
+ModuleFusionProduitDesc = Permet la fusion de 2 produits
+
+#
+# Page d'administration
+#
+FusionProduitSetup = Configuration du module FusionProduit
+Settings = Réglages
+FusionProduitSetupPage = Page de configuration du module FusionProduit
+FUSIONPRODUIT_PRODUCTTABLELIST = Liste des tables où remplacer le produit
+FUSIONPRODUIT_PRODUCTTABLELISTTooltip = Indiquer les tables séparées par des retours chariot. <br/>Par défaut, on remplace le champ fk_product = id produit à supprimer de l'enregistrement par id produit à conserver; si le nom du champ à remplacer n'est pas fk_product, indiquez le(s) à la suite en le séparant par des ,<br/>Si on fait précéder le nom de la table par +=0| , le champ traité sera additionné dans l'enregistrement à conserver par sa valeur dans celui à supprimer, et ce dernier sera mis à 0.
+FUSIONPRODUIT_CUSTOMCODE = Code php spécifique à exécuter
+FUSIONPRODUIT_CUSTOMCODETooltip = Les noms de variables pour les product rowid à conserver / désactiver sont $pidtokeep et $pidtodel
+
+#
+# Page À propos
+#
+About = À propos
+FusionProduitAbout = À propos de FusionProduit
+FusionProduitAboutPage = Page à propos de FusionProduit
+
+#
+# Page index
+#
+FusionProduitArea = Fusion de produits
+MergeExplaination = Les produits à fusionnner doivent <ul><li> posséder des caractéristiques similaires</li><li> être en vente et/ou en achat </li></ul>Legende :
+PropertiesOK = Propriétés identiques
+PropertiesKO = Propriétés différentes, fusion impossible
+PropertiesBof = Propriétés différentes, fusion possible
+SelProdToKeep = Sélectionner le produit à conserver
+SelProdToDel = Sélectionner le produit à DESACTIVER/SUPPRIMER
+ButMerge = Fusionner les produits
+stepXonY = Etape %s sur 4
+selProdsToMerge = Sélection des produits à fusionner
+checkProdsToMerge = Vérifications des produits à fusionner
+ProdToKeep = Produit à conserver
+ProdToDel = Produit à DESACTIVER/SUPPRIMER
+MergingProds = <h4>Fusion des produits ! <br/> Execution des requêtes </h4>
+LineTreatmment = Traitement de la ligne "%s"
+TableNotFoundInDb = Table ### inconnue dans la BDD
+FieldsNotFoundInTable = Certains champs (###) non présents dans la table
+CheckToApplyMerges = Cochez pour réellement appliquer les changements (test seulement sinon ...)
+TestModeChangesNotCommited = Mode test, changements non commités.
+ChangesCommited = La fusion a été effectuée !
+ProductsMustBeDifferent = Les produits à fusionner doivent être différents :-\
+CustomCodeExec = Exécution du code spécifique
+NoCustomCode = Pas de code spécifique à exécuter
+ProductMergeWithNote = Produit fusionné avec %s le %s par %s, puis désactivé
+ProductDisactCode = --Desact--
+#
+# Box d'exemple
+#
+MyWidget = Mon widget
+MyWidgetDescription = Description de mon widget
